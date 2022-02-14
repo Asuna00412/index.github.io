@@ -33,15 +33,15 @@ class Content extends React.Component {
         return (
             <section className="col-md-9 card-wrapper pull-right">
                 <div className="card background-card">
-                    <h4 className="text-uppercase">背景资料</h4>
+                    <h4 className="text-uppercase">个人链接</h4>
                     <hr />
                     <div className="background-details">
                         <div className="detail" id="about">
                             <div className="icon">
-                                <i className="fs-lg icon-board"></i><span className="mobile-title">自我描述</span>
+                                <i className="fs-lg icon-board"></i><span className="mobile-title">自建服务器</span>
                             </div>
                             <div className="info">
-                                <h4 className="title text-uppercase">自我描述</h4>
+                                <h4 className="title text-uppercase">自建服务器</h4>
                                 <ul className="list-unstyled clear-margin">
                                     <li className="card card-nested clearfix">
                                         <div className="content mop-wrapper">
@@ -132,10 +132,10 @@ class Content extends React.Component {
                         </div>
                         <div className="detail" id="project-experience">
                             <div className="icon">
-                                <i className="fs-lg icon-child"></i><span className="mobile-title">项目经验</span>
+                                <i className="fs-lg icon-child"></i><span className="mobile-title">Bilibili</span>
                             </div>
                             <div className="info">
-                                <h4 className="title text-uppercase">项目经验</h4>
+                                <h4 className="title text-uppercase">Bilibili</h4>
                                 <div className="content">
                                     <ul className="list-unstyled clear-margin">
                                         {project.map((n, i) => {
@@ -152,7 +152,7 @@ class Content extends React.Component {
                                                             <small>{n.startDate} - {n.endDate}</small>
                                                         </p>
                                                         <div className="mop-wrapper space-bottom">
-                                                            <p>技术栈：{n.summary}</p>
+                                                            <p>类别：{n.summary}</p>
                                                         </div>
                                                         <ul>
                                                             {n.highlights.map((v, k) => {
